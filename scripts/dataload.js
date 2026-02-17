@@ -78,4 +78,9 @@ function Products(data) {
     });
 }
 
+const loadCategoryProducts = (category) => {
+    fetch(`https://fakestoreapi.com/products/category/${category}`)
+        .then(res => res.json())
+        .then(data => Products(data));
+}
 
