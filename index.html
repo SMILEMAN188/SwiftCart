@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftCart</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Daisy UI -->
+     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/7b2921b6cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+                                            <!-- navbar -->
+    <nav>
+        <div class="flex flex-row justify-evenly items-center navbar shadow-sm">
+            <div>
+                <a class="text-3xl font-bold text-[#4f39f6]">SwiftCart</a>
+            </div>
+            <div class="hidden flex-row justify-around items-center gap-6 lg:flex">
+                <p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">HOME</p>
+                <p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">SHOP</p>
+                <p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">ABOUT</p>
+                <p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">CONTACT</p>
+            </div>
+            <div class="flex flex-row justify-around items-center gap-4">
+                <div>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="block lg:hidden">
+                    <i class=" fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+                                          <!-- hero section -->
+    <section>
+        <div class="hero"
+            style="background-image: url(https://github.com/Apollo-Level2-Web-Dev/mission-restart-a6/blob/main/Assets/banner-image.png?raw=true);">
+            <div class="hero-overlay"></div>
+            <div class="hero-content text-neutral-content text-start py-60">
+                <div class="max-w-md">
+                    <h1 class="mb-7 text-5xl font-bold whitespace-pre-line lg:whitespace-nowrap">Best Collection For You</h1>
+                    <p class="mb-5 text-xl font-light whitespace-pre-line">Discover the lattest trends in fashion, electronics, and more! Shop with confidence and style at SwiftCart.</p>
+                    <button onclick="" class="btn btn-primary">Shop Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+                                         <!-- support section -->
+    <section class="flex flex-col justify-center items-center bg-[#f9fafb]">
+        <p class="text-4xl font-bold mt-20">Why Choose Us?</p>
+        <p class="text-lg font-medium px-5 pt-5 pb-24 text-gray-600">We provide the best shopping experience with top-notch services.</p>
+
+        <div class="flex flex-col justify-center items-center mx-16 lg:mx-40 mb-20 gap-10 lg:flex-row">
+
+            <div>
+                <div class="relative bg-white rounded-lg">
+                    <div class="absolute -top-6  -translate-x-1/2 right-2/3 shadow-lg  bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-truck"></i></div>
+                    <div class="p-5 pt-20">
+                        <p class="text-lg font-semibold pb-4">Fast Delivery</p>
+                        <p class="text-gray-600 text-base font-semibold pb-4">Get your orders delivered to your doorstep quickly and efficiently.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="relative bg-white rounded-lg">
+                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-headset"></i></div>
+                    <div class="p-5 pt-20">
+                        <p class="text-lg font-semibold pb-4">24/7 Support</p>
+                        <p class="text-gray-600 text-base font-semibold pb-4">Our support team is available around the clock to assist you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="relative bg-white rounded-lg">
+                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-shield"></i></div>
+                    <div class="p-5 pt-20">
+                        <p class="text-lg font-semibold pb-4">Secure Payment</p>
+                        <p class="text-gray-600 text-base font-semibold pb-4">Experience secure and safe transactions with our encrypted payment system.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="relative bg-white rounded-lg">
+                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <div class="p-5 pt-20">
+                        <p class="text-lg font-semibold pb-4">Easy Returns</p>
+                        <p class="text-gray-600 text-base font-semibold pb-4">Not satisfied ? Return your products easily within 30 days.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+                                              <!-- footer -->
+    <footer class="bg-[#1e2939] text-[#545e6d]">
+        <div class="flex flex-col justify-center items-start gap-10 px-5 py-16 lg:flex-row lg:justify-around lg:mx-32 border-b border-gray-700"> 
+            <div>
+                <p class="text-[#7c86ff] text-xl font-semibold pb-5">SwiftCart</p>
+                <p class="text-[#848c9b] font-medium text-lg">Your one-stop shop for all your fashion <br> and lifestyle needs. Quality products, fast <br> delivery, and excellent support.</p>
+            </div>
+
+            <div>
+                <p class="text-[#969eac] font-semibold pb-4">QUICK LINKS</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Home</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Products</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">About Us</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Contact Us</p>
+            </div>
+
+            <div>
+                <p class="text-[#969eac] font-semibold pb-4">SUPPORT</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">FAQs</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Shipping Policy</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Returns & Refunds</p>
+                <p class="text-[#c2c6ce]  text-base font-medium pb-3">Privacy Policy</p>
+            </div>
+
+            <div>
+                <form>
+                    <h6 class="footer-title text-[#969eac] font-semibold pb-4">SUBSCRIBE TO NEWSLETTER</h6>
+                    <fieldset class="w-80">
+                        <p class="text-[#c2c6ce] text-sm pb-4">The letest news, articles and resources delivered to your inbox</p>
+                        <div class="join">
+                            <input type="text" placeholder="Enter your email address" class="input input-bordered join-item rounded-lg" />
+                            <button class="btn btn-primary join-item rounded-lg px-3">Subscribe</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div class="flex flex-col lg:flex-row justify-around items-center gap-5 py-5">
+            <div>
+                <p>© 2026 SwiftCart, Inc. All rights reserved.</p>
+            </div>
+            
+            <div class="flex flex-row items-center justify-center gap-5">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            </div>
+    </footer>
+                                <!-- Category container -->
+    <!-- <div class="text-center">
+        <p class="text-3xl font-bold text-center my-8">Our Products</p>
+    </div>
+    
+    <section id="category-container" class="flex flex-row justify-center items-center gap-4 overflow-x-auto snap-x mx-2 ">
+        <button class="btn btn-soft btn-primary snap-mandatory">All</button>
+    </section> -->
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
