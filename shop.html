@@ -16,14 +16,14 @@
     </style>
 </head>
 <body>
-                                            <!-- navbar -->
+                                                <!-- navbar -->
     <nav>
         <div class="flex flex-row justify-evenly items-center navbar shadow-sm">
             <div>
-                <p id="home" class="text-3xl font-bold text-[#4f39f6]">SwiftCart</p>
+                <p onclick="window.location.href='index.html'" class="text-3xl font-bold text-[#4f39f6]">SwiftCart</p>
             </div>
             <div class="hidden flex-row justify-around items-center gap-6 lg:flex">
-                <p id="home" class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">HOME</p>
+                <p onclick="window.location.href='index.html'" class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">HOME</p>
                 <p onclick="window.location.href='shop.html'" class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">SHOP</p>
                 <a href="#footer"><p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">ABOUT</p></a>
                 <a href="#footer"><p class="font-medium text-xl text-gray-600 hover:text-[#4f39f6]">CONTACT</p></a>
@@ -38,70 +38,22 @@
             </div>
         </div>
     </nav>
-                                          <!-- hero section -->
-    <section id="hero">
-        <div class="hero "
-            style="background-image: url(https://github.com/Apollo-Level2-Web-Dev/mission-restart-a6/blob/main/Assets/banner-image.png?raw=true);">
-            <div class="hero-overlay"></div>
-            <div class="hero-content text-neutral-content text-start py-60">
-                <div class="max-w-md">
-                    <h1 class="mb-7 text-5xl font-bold whitespace-pre-line lg:whitespace-nowrap">Best Collection For You</h1>
-                    <p class="mb-5 text-xl font-light whitespace-pre-line">Discover the lattest trends in fashion, electronics, and more! Shop with confidence and style at SwiftCart.</p>
-                    <button onclick="window.location.href='shop.html'" class="btn btn-primary">Shop Now</button>
-                </div>
-            </div>
+    
+                                            <!-- Category container -->
+
+    <section id="products">
+        <div class="text-center">
+            <p class="text-3xl font-bold text-center my-8">Our Products</p>
         </div>
-    </section>
+        
+        <section id="category-container" class="flex flex-row justify-center items-center gap-4 overflow-x-auto snap-x mx-2 my-8">
+            <button onclick="allProducts()" class="btn btn-soft btn-primary snap-mandatory">All</button>
+        </section>
 
-
-                                         <!-- support section -->
-    <section id="support" class="flex flex-col justify-center items-center pt-20 bg-[#f9fafb]">
-        <p class="text-4xl font-bold text-center">Why Choose Us?</p>
-        <p class="text-lg font-medium px-5 pt-5 pb-24 text-gray-600 text-center">We provide the best shopping experience with top-notch services.</p>
-
-        <div class="flex flex-col justify-center items-center mx-16 lg:mx-40 mb-20 gap-10 lg:flex-row">
-
-            <div>
-                <div class="relative shadow-xl bg-white rounded-lg">
-                    <div class="absolute -top-6  -translate-x-1/2 right-2/3 shadow-lg  bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-truck"></i></div>
-                    <div class="p-5 pt-20">
-                        <p class="text-lg font-semibold pb-4">Fast Delivery</p>
-                        <p class="text-gray-600 text-base font-semibold pb-4">Get your orders delivered to your doorstep quickly and efficiently.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="relative shadow-xl bg-white rounded-lg">
-                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-headset"></i></div>
-                    <div class="p-5 pt-20">
-                        <p class="text-lg font-semibold pb-4">24/7 Support</p>
-                        <p class="text-gray-600 text-base font-semibold pb-4">Our support team is available around the clock to assist you.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="relative shadow-xl bg-white rounded-lg">
-                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-shield"></i></div>
-                    <div class="p-5 pt-20">
-                        <p class="text-lg font-semibold pb-4">Secure Payment</p>
-                        <p class="text-gray-600 text-base font-semibold pb-4">Experience secure and safe transactions with our encrypted payment system.</p>
-                    </div>
-                </div>
-            </div>
-
-            <div>
-                <div class="relative shadow-xl bg-white rounded-lg">
-                    <div class="absolute -top-6 -translate-x-1/2 right-2/3 shadow-lg bg-[#eef2ff] px-5 py-4 rounded-xl border-white border-2"><i class="fa-solid fa-arrows-rotate"></i></div>
-                    <div class="p-5 pt-20">
-                        <p class="text-lg font-semibold pb-4">Easy Returns</p>
-                        <p class="text-gray-600 text-base font-semibold pb-4">Not satisfied ? Return your products easily within 30 days.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+        <section class="flex flex-row justify-center items-center gap-4 my-8">
+                <div id="products-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 justify-center items-center gap-2 mx-2 my-8">
+                </div> 
+        </section>
     </section>
 
                                               <!-- footer -->
@@ -160,5 +112,6 @@
 
     <script src="scripts/scripts.js"></script>
     <script src="scripts/dataload.js"></script>
+
 </body>
 </html>

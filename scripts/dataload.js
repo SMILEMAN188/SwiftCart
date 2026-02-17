@@ -1,3 +1,4 @@
+
 fetch("https://fakestoreapi.com/products/categories")
 .then((res) => res.json())
 .then((data) => Categories(data));
@@ -8,6 +9,12 @@ function Categories(data) {
         const categoryElement = document.createElement("button");
         categoryElement.textContent = category;
         categoryElement.classList.add("btn","btn-soft", "btn-primary", "capitalize", "snap-center");
+
+        categoryElement.onclick = function () {
+            loadCategoryProducts(category);
+        };
+
         categoryContainer.appendChild(categoryElement);
     });
 }
+
